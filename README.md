@@ -7,6 +7,7 @@
 #### 	3.	Using preprocessors like Sass or LESS
 #### 	4. 	Optimizing assets like CSS, JavaScript, and images
 
+#### In this Project we will be creating tasks that will be used for different purposes such as preprocessing with gulp for sass. npm install gulp-sass --save-dev
 
 ## Usage
 
