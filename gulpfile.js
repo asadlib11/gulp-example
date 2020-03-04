@@ -9,9 +9,9 @@ var gulp = require("gulp"),
 var paths = {
     styles: {
         // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
-        src: "src/scss/*.scss",
+        src: "app/scss/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
-        dest: "src/css"
+        dest: "app/css"
     }
 };
 
@@ -43,7 +43,7 @@ function watch() {
     browserSync.init({
         // You can tell browserSync to use this directory and serve it as a mini-server
         server: {
-            baseDir: "./src"
+            baseDir: "./app"
         }
         // If you are already serving your website locally using something like apache
         // You can use the proxy setting to proxy that instead
@@ -53,7 +53,7 @@ function watch() {
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website
     // Note -- you can obviously add the path to the Paths object
-    gulp.watch("src/*.html", reload);
+    gulp.watch("app/*.html", reload);
 }
 
 // Don't forget to expose the task!
